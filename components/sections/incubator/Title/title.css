@@ -1,0 +1,50 @@
+.title {
+    position: relative;
+    z-index: 1;
+    font-family: 'Blinker', sans-serif;
+	font-size: 55px;
+	font-weight: 700;
+	line-height: 1.12;
+    text-transform: uppercase;
+	text-shadow: 5px 3px 0 rgba(0, 102, 255, 0.7);
+}
+
+.title-neon span {
+	text-shadow: 5px 3px 0 rgba(0, 102, 255, 0.7), 0 0 15px rgba(0, 102, 255, 1);
+}
+
+.title-black {
+	font-family: 'Blinker', sans-serif;
+	font-size: 55px;
+	font-weight: 700;
+    line-height: 1.03;
+    text-transform: uppercase;
+    color: #141414;
+}
+
+.title_size_md {
+	margin-bottom: 5px;
+	font-size: 60px;
+}
+
+.title_color_white {
+	text-shadow: unset;
+	color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+	.title {
+		font-size: 28.8px !important;
+    }
+
+	.title-black {
+		font-size: 44px;
+	}
+	
+}
+
+@media (max-width: 768px) {
+	.title_size_md {
+		font-size: 24px;
+	}
+}

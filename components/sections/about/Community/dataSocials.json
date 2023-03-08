@@ -1,0 +1,38 @@
+[
+  {
+    "id": "3",
+    "title": "Telegram (En)",
+    "icon": "telegram.svg",
+    "url": "https://t.me/PlatinumQjp"
+  },
+  {
+    "id": "6",
+    "title": "Twitter",
+    "icon": "twitter.svg",
+    "url": "https://twitter.com/platinum_fund"
+  },
+  {
+    "id": "7",
+    "title": "Facebook",
+    "icon": "facebook.svg",
+    "url": "https://www.facebook.com/FundPlatinum"
+  },
+  {
+    "id": "8",
+    "title": "LinkedIn",
+    "icon": "linkedin.svg",
+    "url": "https://www.linkedin.com/company/platinumqdao/"
+  },
+  {
+    "id": "9",
+    "title": "YouTube",
+    "icon": "youtube.svg",
+    "url": "https://www.youtube.com/channel/UCeT4b3_cdVHfSuV_5o7Qw7g"
+  },
+  {
+    "id": "11",
+    "title": "Github",
+    "icon": "github.svg",
+    "url": "https://github.com/platinum-engineering?tab=repositories"
+  }
+]

@@ -1,0 +1,123 @@
+.who-we-are {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 47px;
+}
+
+.who-we-are .contact-us-button__big {
+    margin: 42px 10px 10px;
+}
+
+.who-we-are .wrapper_section-content {
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.who-we-are__content-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 694px;
+    margin: -10px;
+}
+
+.who-we-are__title {
+    margin-bottom: 40px;
+    font-family: Blinker;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 103.41%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.who-we-are__inform-text {
+    margin-bottom: 40px;
+    max-width: 540px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.who-we-are__map {
+    position: absolute;
+    top: -10px;
+    z-index: -1;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 1200px;
+    height: 100%;
+    width: 100vw;
+}
+
+.who-we-are__container-button {
+    margin: 0rem 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    max-width: 535px;
+}
+
+.who-we-are__facts {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+
+    .who-we-are {
+       flex-direction: column;
+
+    }
+
+    .who-we-are .wrapper_section-content {
+        align-items: center;
+    }
+
+    .who-we-are__map {
+        position: relative;
+        top: -8px;
+        z-index: -1;
+        display: flex;
+        justify-content: flex-end;
+        max-height: 100%;
+        height: 100%;
+        width: 100%;
+    }
+
+    .who-we-are__mapImage {
+        width: 100vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .who-we-are__title {
+        font-size: 36px;
+    }
+
+    .who-we-are__map {
+        top: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .who-we-are__mapImage {
+        width: 560px;
+        height: 100%;
+    }
+
+    .who-we-are__content-container {
+        max-width: 100%;
+        margin: 8px auto;
+    }
+
+    .who-we-are__facts {
+        content: '';
+        bottom: 0;
+        position: absolute;
+        display: inline-block;
+        width: 80vw;
+    }
+}
+

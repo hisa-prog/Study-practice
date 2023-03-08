@@ -1,0 +1,28 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  max-width: 90vw;
+}
+
+.slider-preface {
+  max-width: 100vw;
+  height: 80vh;
+  justify-content: flex-end;
+}
+
+.slider__body {
+  position: relative;
+}
+
+.slider__slide {
+  width: 100%;
+  transition: opacity 1.5s;
+  opacity: 1;
+}
+
+.slider__slide.invisible {
+  position: absolute;
+  top: -999999vh;
+  left: -999999vw;
+  opacity: 0;
+}

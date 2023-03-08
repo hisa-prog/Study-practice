@@ -1,0 +1,195 @@
+.team-by-departments {
+    overflow: visible;
+    padding-top: 40px;
+}
+
+@media (max-width: 1199px) {
+    .team-by-departments {
+        padding-top: 80px;
+    }
+}
+
+.team-by-departments .wrapper_section-content {
+    align-items: stretch;
+}
+
+
+.team-by-departments__container-button {
+    margin: -100px auto 100px;
+    max-width: 535px;
+}
+
+
+.team-by-departments__preview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 58px;
+    min-height: 186px;
+}
+
+@media (max-width: 767px) {
+    .team-by-departments__preview {
+        flex-direction: column;
+        margin-bottom: 86.4px;
+    }
+
+    .team-by-departments .contact-us-button__big {
+        max-width: 100%
+    }
+}
+
+.team-by-departments__wrapper {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 35px 34px 35px;
+}
+
+@media (max-width: 767px) {
+    .team-by-departments__wrapper {
+        align-items: center;
+    }
+}
+
+@media (min-width: 414px) {
+    .team-by-departments__block {
+        margin-bottom: 107.2px;
+    }
+}
+
+@media (max-width: 413px) {
+    .team-by-departments__block {
+        margin-bottom: 32px;
+    }
+}
+
+.team-by-departments__block:nth-child(even) .team-by-departments__wrapper {
+    align-items: flex-end;
+    order: 2;
+}
+
+@media (max-width: 787px) {
+    .team-by-departments__block:nth-child(even) .team-by-departments__wrapper {
+        align-items: center;
+    }
+}
+
+@media (max-width: 787px) {
+    .team-by-departments__block:nth-child(even) .team-by-departments__wrapper {
+        order: 0;
+    }
+}
+
+.team-by-departments__block-title {
+    font-size: 47px !important;
+    margin-bottom: 29px;
+}
+
+@media (max-width: 787px) {
+    .team-by-departments__block-title {
+        text-align: center;
+        font-size: 37.6px !important;
+    }
+}
+
+.team-by-departments__preview-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 80vw;
+    z-index: 0;
+}
+
+@media (max-width: 787px) {
+    .team-by-departments__preview-image {
+        position: unset;
+        display: inline;
+    }
+}
+
+.team-by-departments__block:nth-child(even) .team-by-departments__preview-image {
+    left: 0;
+}
+
+@media (max-width: 787px) {
+    .team-by-departments__block:nth-child(odd) .team-by-departments__preview {
+        /* text-align: center; */
+        text-align: end;
+    }
+}
+
+.team-by-departments__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 -20px;
+}
+
+@media (max-width: 485px) {
+    .team-by-departments__member-main {
+        text-align: center;
+    }
+
+    .team-by-departments__member-position {
+        margin: auto;
+    }
+}
+
+.team-by-departments__list.hidden {
+    height: 0;
+    overflow: hidden;
+}
+
+.team-by-departments__member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 20px;
+}
+
+.team-by-departments__member-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-by-departments__member-photo {
+    height: 207px;
+    width: 207px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 17px;
+    border: 2px solid #0066FF;
+    box-shadow: 0 0 10px #0066FF;
+    border-radius: 200px;
+}
+
+.team-by-departments__wrapper-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+    padding-left: 15px;
+    opacity: 0;
+}
+
+.team-by-departments__member-main {
+    width: 240px;
+}
+
+.team-by-departments__member-name {
+    margin-bottom: 2px;
+    font-family: 'Blinker', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.team-by-departments__member-position {
+    width: 200px;
+    font-family: 'Blinker', sans-serif;
+    font-size: 18px;
+    line-height: 1.22;
+}

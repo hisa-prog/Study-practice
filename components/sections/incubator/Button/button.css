@@ -1,0 +1,155 @@
+.button {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 1.18;
+    border: 2px solid #0066FF;
+    background: rgba(0, 102, 255, 0.4);
+    box-sizing: border-box;
+    cursor: pointer;
+    animation: animation_shadow 3s infinite;
+    text-decoration: none;
+}
+
+.button--team {
+    animation: animation_shadow 1.5s infinite;
+}
+
+@keyframes animation_shadow {
+    0% {
+        box-shadow: 0 0 0 #0066FF;
+    }
+    60% {
+        box-shadow: 0 0 1rem #0066FF;
+    }
+    100% {
+        box-shadow: 0 0 0 #0066FF;
+    }
+}
+@keyframes animation_shadow {
+    0% {
+        box-shadow: 0 0 0 #0066FF;
+    }
+    70% {
+        box-shadow: 0 0 2rem #0066FF;
+    }
+    100% {
+        box-shadow: 0 0 0 #0066FF;
+    }
+}
+
+.button:hover {
+    border: 1px solid #0066FF;
+    background: #0066FF;
+    box-shadow: 0 0 10px #0066FF;
+    transition: 0.2s linear;
+}
+
+.button__icon {
+    height: 20px;
+    margin-left: 15px;
+}
+
+/* sizes */
+.button--small {
+    width: 243px;
+    height: 48px;
+}
+
+.button--middle {
+    width: 260px;
+    height: 55px;
+}
+
+.button--big {
+    width: 438px;
+    height: 70px;
+}
+
+.button--large {
+    width: 686px;
+    height: 95px;
+    font-size: 22px;
+}
+
+@media screen and (max-width: 767px) {
+    .button--large {
+        font-size: 12.8px;
+    }
+}
+
+/* button-white */
+.button-white {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 438px;
+    height: 64px;
+    max-width: 100%;
+    margin: auto;
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02rem;
+    color: #141414;
+    text-decoration: none;
+    border-radius: 47px;
+    background: #fff;
+}
+
+.button-orange {
+    padding: 21px 83px;
+    box-sizing: border-box;
+    border: 1px solid #FF6932;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #FF6932;
+    box-shadow: 0 20px 30px -10px rgba(255, 105, 50, 0.15);
+    filter: drop-shadow(0px 0px 6px #FF6932);
+    font-family: 'Blinker', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 160%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    transition: all .2s linear;
+}
+
+.button-orange:hover {
+    background: rgba(255, 105, 50, 0.7);
+}
+
+.button-orange.button-orange--modal {
+    min-height: 78px;
+    width: 100%;
+    padding: 0 46px;
+    font-family: 'Blinker', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.button-orange.button-orange--big{
+    min-height: 120px;
+    width: 100%;
+    padding: 0 30px;
+    font-family: 'Blinker', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 767px) {
+    .button-orange.button-orange--big {
+        min-height: 78px;
+        font-size: 20px;
+    }
+}
+

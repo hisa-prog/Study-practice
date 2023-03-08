@@ -1,0 +1,166 @@
+.who-we-sd {
+	position: relative;
+	width: 100%;
+	margin: auto;
+	background: url('/images-light/backgrounds/bg-sd-logo.svg') no-repeat #111;
+	background-position-x: center;
+	background-position-y: 30px;
+	background-size: 80%;
+}
+
+.who-we-sd__section-content {
+	width: 890px;
+	padding-top: calc(65px + 4vh);
+	margin: 0 auto 70px;
+}
+
+.who-we-sd__squares {
+	display: block;
+	width: 80px;
+	margin: 0 auto 4.5vh;
+}
+
+.who-we-sd .title-sd {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 6vh;
+	font-family: 'Blinker', sans-serif;
+	line-height: 1.12;
+	text-transform: uppercase;
+	/* text-shadow: 0.5rem 0.3rem 0 rgba(0, 102, 255, 0.7); */
+	text-align: center;
+	color: #fff;
+}
+
+.who-we-sd__text {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 3.5vh;
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 18px;
+	line-height: 3.2vh;
+	letter-spacing: 0.03rem;
+	color: #fff;
+}
+
+.who-we-sd__sign {
+	width: 90px;
+	height: 90px;
+	margin-right: 20px;
+}
+
+.who-we-sd__sign-wrapper {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.who-we-sd__sign-position {
+	font-family: 'Blinker', sans-serif;
+	font-size: 16px;
+	line-height: 175%;
+	letter-spacing: 0.03rem;
+	color: #d5d5d5;
+}
+
+.who-we-sd__squares.off-animation {
+	animation: none;
+	opacity: 0;
+	transform: translate(0, 1rem);
+}
+
+.who-we-sd__squares.on-animation {
+	animation: who-we-logo-show 0.3s ease-in-out;
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.who-we-sd .title-sd.off-animation {
+	animation: none;
+	opacity: 0;
+	transform: translate(0, 1rem);
+}
+
+.who-we-sd .title-sd.on-animation {
+	animation: who-we-logo-show 0.5s ease-in-out;
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+.who-we-sd-text.off-animation {
+	animation: none;
+	opacity: 0;
+	transform: translate(0, 1rem);
+}
+
+.who-we-sd-text.on-animation {
+	animation: who-we-logo-show 0.8s ease-in-out;
+	opacity: 1;
+	transform: translate(0, 0);
+}
+
+@keyframes who-we-logo-show {
+	0% {
+		transform: translate(0, 1rem);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(0, 0);
+		opacity: 1;
+	}
+}
+
+@media (max-width: 1024px) {
+	.who-we-sd {
+		height: auto !important;
+	}
+
+	.who-we-sd .title-sd.off-animation {
+		opacity: 1 !important;
+	}
+}
+
+@media (max-width: 780px) {
+	.who-we-sd {
+		width: 100%;
+		box-sizing: border-box;
+		padding-top: 80px;
+	}
+
+	.who-we-sd__section-content {
+		width: 100%;
+		padding: 0 16px;
+		box-sizing: border-box;
+	}
+	.who-we-sd__text {
+		width: 100%;
+		max-width: 480px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.who-we-sd__sign-wrapper {
+		max-width: 480px;
+		margin: auto;
+	}
+
+	.who-we-sd .title-sd {
+		text-shadow: unset;
+		font-size: 48px;
+	}
+}
+
+.who-we-sd__container-button {
+	margin: 47px auto;
+	display: flex;
+	justify-content: center;
+	max-width: 417px;
+}
+
+@media (max-width: 767px) {
+	.who-we-sd .title-sd {
+		font-size: 27.2px;
+	}
+}

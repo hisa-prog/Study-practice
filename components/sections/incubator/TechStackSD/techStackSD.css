@@ -1,0 +1,825 @@
+main .tech-stack-sd {
+    position: relative;
+    height: 90vh;
+}
+.tech-stack-block__nav-mobile {
+    display: none;
+}
+.tech-stack-sd__section-content {
+    width: 1120px;
+    padding-top: calc(50px + 12vh);
+    margin: auto;
+}
+.tech-stack-sd__text-decoration {
+    position: absolute;
+    right: 0;
+    bottom: 150px;
+    font-family: 'Blinker', sans-serif;
+    font-weight: 700;
+    font-size: 400px;
+    line-height: 300px;
+    letter-spacing: 0.7rem;
+    text-transform: uppercase;
+    color: #141414;
+}
+.tech-stack-sd .title-sd {
+    margin-bottom: 8.5vh;
+    color: #fff;
+    text-align: center;
+    transition: all 1s ease-in-out;
+    opacity: 0.1;
+}
+
+.title-sd {
+    font-size: 60px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 6px 3px 0 #0066FF
+}
+
+@media (max-width: 767px) {
+	.title-sd {
+		font-size: 27.2px;
+        text-shadow: 4px 2px 0 #0066FF
+	}
+}
+
+.tech-stack-block {
+    position: relative;
+    width: 100%;
+    transition: all 1s ease-in-out;
+    opacity: 0.1;
+}
+.tech-stack-block__nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.tech-stack-block__toggle {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    transition: border-color 0.3s ease-in-out;
+}
+.tech-stack-block__toggle-text {
+    font-family: 'Blinker', sans-serif;
+    font-size: 26px;
+    white-space: nowrap;
+    line-height: 140%;
+    color: rgba(255, 255, 255, 0.4);
+    transition: all 0.3s ease-in-out;
+}
+.tech-stack-block__toggle:hover .tech-stack-block__toggle-text {
+    color: #fff;
+}
+.tech-stack-block__toggle.active {
+    border-color: #FFFFFF;
+}
+.tech-stack-block__toggle.active .tech-stack-block__toggle-text {
+    color: #fff;
+}
+.tech-stack-block__list {
+    position: absolute;
+    display: grid;
+    align-items: end;
+    justify-items: center;
+    grid-row-gap: 5vh;
+    width: 100%;
+    margin-top: 8.5vh;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.tech-stack-block__list.active {
+    opacity: 1;
+    z-index: 1200;
+}
+.tech-stack-sd .title-sd.on-animation {
+    animation: tech-stack-sd-show 1s ease-in-out;
+    opacity: 1;
+    transform: translate(0, 0);
+}
+.tech-stack-block.on-animation {
+    animation: tech-stack-sd-show 1.2s ease-in-out;
+    opacity: 1;
+}
+@keyframes who-we-logo-show {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.tech-stack-block__nav-mobile .slider-dots {
+    display: flex !important;
+    width: 30vw;
+    justify-content: space-between;
+    margin: 40px 30vw 0;
+}
+.tech-stack-block__nav-mobile .slider-dots button {
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+}
+.tech-stack-block__nav-mobile .slider-dots .slick-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 400px;
+    background: #3c3c3c;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.tech-stack-block__nav-mobile .slider-dots .dot-active {
+    background: #a9a9a9;
+}
+
+/*
+*   blockchain
+*/
+
+.tech-stack-block__list-blockchain {
+    grid-template-areas: 'solidity rust go vyper' '. haskell web3 .';
+}
+.tech-stack-block__list-blockchain img {
+    align-self: center;
+}
+.tech-stack-block__solidity {
+    grid-area: solidity;
+    display: block;
+    width: 50px;
+}
+.tech-stack-block__rust {
+    grid-area: rust;
+    display: block;
+    width: 87px;
+}
+.tech-stack-block__go {
+    grid-area: go;
+    display: block;
+    width: 125px;
+}
+.tech-stack-block__vyper {
+    grid-area: vyper;
+    display: block;
+    width: 80px;
+}
+.tech-stack-block__haskell {
+    grid-area: haskell;
+    display: block;
+    width: 176px;
+}
+.tech-stack-block__web3 {
+    grid-area: web3;
+    display: block;
+    width: 98px;
+}
+
+/*
+*   back
+*/
+
+.tech-stack-block__list-back {
+    grid-template-areas: 'java php nodejs websocket' 'spring yii python phalcon';
+}
+.tech-stack-block__list-back img {
+    align-self: center;
+}
+.tech-stack-block__java {
+    grid-area: java;
+    justify-self: center;
+    display: block;
+    width: 131px;
+}
+.tech-stack-block__php {
+    grid-area: php;
+    display: block;
+    width: 71px;
+}
+.tech-stack-block__nodejs {
+    grid-area: nodejs;
+    display: block;
+    width: 95px;
+}
+.tech-stack-block__swift {
+    grid-area: swift;
+    display: block;
+    width: 112px;
+}
+.tech-stack-block__Csharp {
+    grid-area: Csharp;
+    display: block;
+    width: 40px;
+}
+.tech-stack-block__yii {
+    grid-area: yii;
+    display: block;
+    width: 187px;
+}
+.tech-stack-block__C {
+    grid-area: C;
+    display: block;
+    width: 46px;
+}
+.tech-stack-block__phalcon {
+    grid-area: phalcon;
+    display: block;
+    width: 125px;
+}
+.tech-stack-block__spring {
+    grid-area: spring;
+    display: block;
+    width: 122px;
+}
+.tech-stack-block__python {
+    grid-area: python;
+    display: block;
+    width: 185px;
+}
+
+/*
+*   front
+*/
+
+.tech-stack-block__list-front {
+    grid-template-areas: 'vue react js jquery jquery ts mobile-first' 'bem css responsive sass less npm animation' 'angular gulp babel eslint composer yarn web3';
+}
+.tech-stack-block__list-front img {
+    align-self: center;
+}
+.tech-stack-block__vue {
+    grid-area: vue;
+    display: block;
+    width: 49px;
+}
+.tech-stack-block__react {
+    grid-area: react;
+    display: block;
+    width: 50px;
+}
+.tech-stack-block__js {
+    grid-area: js;
+    display: block;
+    width: 46px;
+}
+.tech-stack-block__jquery {
+    grid-area: jquery;
+    display: block;
+    width: 116px;
+}
+.tech-stack-block__ts {
+    grid-area: ts;
+    display: block;
+    width: 131px;
+}
+.tech-stack-block__mobile-first {
+    grid-area: mobile-first;
+    display: block;
+    width: 131px;
+}
+.tech-stack-block__css {
+    grid-area: css;
+    display: block;
+    width: 41px;
+}
+.tech-stack-block__bem {
+    grid-area: bem;
+    display: block;
+    width: 41px;
+}
+.tech-stack-block__responsive {
+    grid-area: responsive;
+    display: block;
+    width: 82px;
+}
+.tech-stack-block__sass {
+    grid-area: sass;
+    display: block;
+    width: 69px;
+}
+.tech-stack-block__less {
+    grid-area: less;
+    display: block;
+    width: 79px;
+}
+.tech-stack-block__npm {
+    grid-area: npm;
+    display: block;
+    width: 93px;
+}
+.tech-stack-block__animation {
+    grid-area: animation;
+    display: block;
+    width: 195px;
+}
+.tech-stack-block__angular {
+    grid-area: angular;
+    display: block;
+    width: 140px;
+}
+.tech-stack-block__gulp {
+    grid-area: gulp;
+    display: block;
+    width: 30px;
+}
+.tech-stack-block__babel {
+    grid-area: babel;
+    display: block;
+    width: 91px;
+}
+.tech-stack-block__eslint {
+    grid-area: eslint;
+    display: block;
+    width: 58px;
+}
+.tech-stack-block__composer {
+    grid-area: composer;
+    display: block;
+    width: 58px;
+}
+.tech-stack-block__yarn {
+    grid-area: yarn;
+    display: block;
+    width: 54px;
+}
+
+/*
+*   dev
+*/
+
+.tech-stack-block__list-dev {
+    grid-template-areas: 'docker git zabbix nginx' 'grafana-labs elastic elastic kubernetes';
+}
+.tech-stack-block__list-dev img {
+    align-self: center;
+}
+.tech-stack-block__docker {
+    grid-area: docker;
+    display: block;
+    width: 182px;
+}
+.tech-stack-block__git {
+    grid-area: git;
+    display: block;
+    width: 106px;
+}
+.tech-stack-block__apache {
+    grid-area: apache;
+    display: block;
+    width: 175px;
+}
+.tech-stack-block__unix {
+    grid-area: unix;
+    display: block;
+    width: 56px;
+}
+.tech-stack-block__nginx {
+    grid-area: nginx;
+    display: block;
+    width: 122px;
+}
+.tech-stack-block__maven {
+    grid-area: maven;
+    display: block;
+    width: 112px;
+}
+.tech-stack-block__grandle {
+    grid-area: grandle;
+    display: block;
+    width: 139px;
+}
+.tech-stack-block__hibernate {
+    grid-area: hibernate;
+    display: block;
+    width: 218px;
+}
+.tech-stack-block__zabbix {
+    grid-area: zabbix;
+    display: block;
+    width: 190px;
+}
+.tech-stack-block__grafana-labs {
+    grid-area: grafana-labs;
+    /*justify-self: end;*/
+    display: block;
+    width: 236px;
+}
+.tech-stack-block__elastic {
+    grid-area: elastic;
+    /*justify-self: start;*/
+    display: block;
+    width: 164px;
+}
+.tech-stack-block__kubernetes {
+    grid-area: kubernetes;
+    display: block;
+    width: 250px;
+}
+
+/*
+*   data
+*/
+
+.tech-stack-block__list-data {
+    grid-template-areas: 'rabbitMQ redis memcached .' 'influxdb postgresql mongodb mysql';
+}
+.tech-stack-block__rabbitMQ {
+    grid-area: rabbitMQ;
+    align-self: center;
+    justify-self: end;
+    display: block;
+    width: 171px;
+}
+.tech-stack-block__redis {
+    grid-area: redis;
+    justify-self: end;
+    display: block;
+    width: 145px;
+}
+.tech-stack-block__websocket {
+    grid-area: websocket;
+    justify-self: center;
+    display: block;
+    width: 59px;
+}
+.tech-stack-block__memcached {
+    grid-area: memcached;
+    display: block;
+    width: 48px;
+}
+.tech-stack-block__cassandra {
+    grid-area: cassandra;
+    display: block;
+    width: 103px;
+}
+.tech-stack-block__mssql {
+    grid-area: mssql;
+    justify-self: start;
+    display: block;
+    width: 187px;
+}
+.tech-stack-block__postgresql {
+    grid-area: postgresql;
+    display: block;
+    width: 56px;
+}
+.tech-stack-block__mongodb {
+    grid-area: mongodb;
+    justify-self: start;
+    display: block;
+    width: 163px;
+}
+.tech-stack-block__mysql {
+    grid-area: mysql;
+    justify-self: start;
+    display: block;
+    width: 113px;
+}
+.tech-stack-block__influxdb {
+    grid-area: influxdb;
+    display: block;
+    width: 240px;
+}
+
+/*
+*   test
+*/
+
+.tech-stack-block__list-test {
+    grid-template-areas: 'seleniuml behat mocha';
+}
+.tech-stack-block__selenium {
+    grid-area: seleniuml;
+    display: block;
+    width: 67px;
+}
+.tech-stack-block__list img:hover {
+    filter: invert(53%) sepia(68%) saturate(2878%) hue-rotate(567deg) brightness(104%) contrast(97%) drop-shadow(0px 0px 17px rgba(0, 102, 255, 0.8));
+}
+.tech-stack-block__behat {
+    grid-area: behat;
+    display: block;
+    width: 140px;
+}
+.tech-stack-block__mocha {
+    grid-area: mocha;
+    display: block;
+    width: 70px;
+}
+@media (max-width: 1024px) {
+    .tech-stack-sd .title-sd {
+        opacity: 1;
+    }
+    .tech-stack-block {
+        opacity: 1;
+    }
+    .tech-stack-sd {
+        /* height: 81rem !important; */
+        margin-bottom: 60px;
+    }
+    .tech-stack-sd__section-content {
+        padding-top: 60px;
+    }
+    .tech-stack-sd .title-sd {
+        margin-bottom: 50px;
+    }
+    .tech-stack-sd__section-content {
+        width: 90%;
+    }
+    .tech-stack-sd__text-decoration {
+        font-size: 240px;
+    }
+}
+@media (max-width: 780px) {
+    .tech-stack-block__list {
+        margin-top: 47px;
+    }
+    .tech-stack-block__nav {
+        display: none;
+        /* grid-template-columns: 1fr 1fr 1fr; */
+    }
+    .tech-stack-block__nav-mobile .slider-dots {
+        position: absolute !important;
+        top: 68vh !important;
+    }
+    .tech-stack-block__nav .slider-dots {
+        margin-top: 91vh;
+    }
+    .tech-stack-block__nav-mobile {
+        display: block;
+    }
+    .tech-stack-block__toggle {
+        display: block;
+        width: max-content;
+        margin-bottom: 30px;
+    }
+    .tech-stack-block div {
+        justify-self: center;
+        height: 60px;
+    }
+    /* .tech-stack-block div:nth-child(5) {
+        justify-self: end;
+    }
+    .tech-stack-block div:nth-child(6) {
+        grid-column: 2 / 4;
+        grid-row: 2;
+    } */
+    .tech-stack-block__nav {
+        border-bottom: 1.5px solid rgba(255, 255, 255, 0.1);
+    }
+    .tech-stack-sd__text-decoration {
+        font-size: 100px;
+    }
+    .tech-stack-block__list-blockchain {
+        grid-template-areas: 'solidity rust go ' 'vyper haskell web3';
+    }
+    .tech-stack-block__list-back {
+        grid-template-areas: 'java php nodejs' 'websocket spring yii' 'python . phalcon';
+    }
+    .tech-stack-block__C {
+        justify-self: end;
+    }
+    .tech-stack-block__phalcon {
+        justify-self: start;
+    }
+    .tech-stack-block__list-front {
+        grid-template-areas: '. vue react js .' ' jquery jquery ts mobile-first mobile-first' 'bem css css responsive sass' 'less npm npm animation animation' 'angular gulp gulp gulp babel' 'composer eslint yarn . web3';
+    }
+    .tech-stack-block__yarn {
+        justify-self: end;
+    }
+    .tech-stack-block__mobile-first {
+        justify-self: end;
+    }
+    .tech-stack-block__list-dev {
+        grid-template-areas: 'docker git' 'zabbix nginx' ' grafana-labs elastic' 'kubernetes kubernetes';
+    }
+    .tech-stack-block__elastic {
+        justify-self: center;
+    }
+    .tech-stack-block__list-data {
+        grid-template-areas: 'rabbitMQ redis redis' 'memcached influxdb postgresql' 'mongodb mysql mysql';
+    }
+    .tech-stack-block__list-data img {
+        justify-self: center;
+    }
+}
+@media (max-width: 480px) {
+    .tech-stack-sd {
+        height: 110vh !important;
+    }
+    .tech-stack-block__toggle-text {
+        font-size: 18px;
+    }
+    /* .tech-stack-block__nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    } */
+    /*
+*   blockchain
+*/
+    .tech-stack-block__solidity {
+        grid-area: solidity;
+        display: block;
+        width: 25.6px;
+    }
+    .tech-stack-block__rust {
+        grid-area: rust;
+        display: block;
+        width: 44.8px;
+    }
+    .tech-stack-block__go {
+        grid-area: go;
+        display: block;
+        width: 64.8px;
+    }
+    .tech-stack-block__vyper {
+        grid-area: vyper;
+        display: block;
+        width: 41.6px;
+    }
+    .tech-stack-block__haskell {
+        grid-area: haskell;
+        display: block;
+        width: 89.6px;
+    }
+    .tech-stack-block__web3 {
+        grid-area: web3;
+        display: block;
+        width: 50.4px;
+    }
+    /*
+    *   back
+    */
+    .tech-stack-block__java {
+        width: 66px;
+    }
+    .tech-stack-block__php {
+        width: 35.2px;
+    }
+    .tech-stack-block__nodejs {
+        width: 47.2px;
+    }
+    .tech-stack-block__swift {
+        width: 56px;
+    }
+    .tech-stack-block__Csharp {
+        width: 20px;
+    }
+    .tech-stack-block__yii {
+        width: 92.8px;
+    }
+    .tech-stack-block__C {
+        width: 22px;
+    }
+    .tech-stack-block__phalcon {
+        width: 62px;
+    }
+    .tech-stack-block__python {
+        width: 98.4px;
+    }
+    /*
+    *   front
+    */
+    .tech-stack-block__vue {
+        width: 24px;
+    }
+    .tech-stack-block__react {
+        width: 24.2px;
+    }
+    .tech-stack-block__js {
+        width: 23.2px;
+    }
+    .tech-stack-block__jquery {
+        width: 58px;
+    }
+    .tech-stack-block__ts {
+        width: 66px;
+    }
+    .tech-stack-block__mobile-first {
+        width: 66px;
+    }
+    .tech-stack-block__css {
+        width: 20.8px;
+    }
+    .tech-stack-block__bem {
+        width: 28px;
+    }
+    .tech-stack-block__responsive {
+        width: 40.8px;
+    }
+    .tech-stack-block__sass {
+        width: 35.2px;
+    }
+    .tech-stack-block__less {
+        width: 40px;
+    }
+    .tech-stack-block__npm {
+        width: 47.2px;
+    }
+    .tech-stack-block__animation {
+        width: 98px;
+    }
+    .tech-stack-block__angular {
+        width: 70px;
+    }
+    .tech-stack-block__gulp {
+        width: 15.2px;
+    }
+    .tech-stack-block__babel {
+        width: 44.8px;
+    }
+    .tech-stack-block__eslint {
+        width: 28.8px;
+    }
+    .tech-stack-block__composer {
+        width: 28.8px;
+    }
+    .tech-stack-block__yarn {
+        width: 27.2px;
+    }
+    /*
+    *   dev
+    */
+    .tech-stack-block__docker {
+        width: 91.2px;
+    }
+    .tech-stack-block__git {
+        width: 52.8px;
+    }
+    .tech-stack-block__apache {
+        width: 88px;
+    }
+    .tech-stack-block__unix {
+        width: 28px;
+    }
+    .tech-stack-block__nginx {
+        width: 60.8px;
+    }
+    .tech-stack-block__maven {
+        width: 56px;
+    }
+    .tech-stack-block__grandle {
+        width: 70px;
+    }
+    .tech-stack-block__hibernate {
+        width: 108.8px;
+    }
+    .tech-stack-block__grafana-labs {
+        width: 125.6px;
+    }
+    .tech-stack-block__zabbix {
+        width: 100.8px;
+    }
+    .tech-stack-block__kubernetes {
+        width: 132.8px;
+    }
+    .tech-stack-block__elastic {
+        width: 82.4px
+    }
+    /*
+    *   data
+    */
+    .tech-stack-block__rabbitMQ {
+        width: 86px;
+    }
+    .tech-stack-block__redis {
+        width: 72.8px;
+    }
+    .tech-stack-block__websocket {
+        width: 30px;
+    }
+    .tech-stack-block__memcached {
+        width: 24px;
+    }
+    .tech-stack-block__cassandra {
+        width: 52px;
+    }
+    .tech-stack-block__mssql {
+        width: 92.8px;
+    }
+    .tech-stack-block__postgresql {
+        width: 28px;
+    }
+    .tech-stack-block__mongodb {
+        width: 82px;
+    }
+    .tech-stack-block__mysql {
+        width: 56.8px;
+    }
+    .tech-stack-block__influxdb {
+        width: 128px;
+    }
+    /*
+    *   test
+    */
+    .tech-stack-block__selenium {
+        width: 34px;
+    }
+    .tech-stack-block__behat {
+        width: 70px;
+    }
+    .tech-stack-block__mocha {
+        width: 35.2px;
+    }
+}

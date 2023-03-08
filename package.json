@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@ap.cx/react-fullpage": "^0.3.0",
+    "@babel/core": "^7.4.5",
+    "@fullpage/react-fullpage": "^0.1.31",
+    "next": "latest",
+    "nodemailer": "^6.7.7",
+    "normalize-wheel": "^1.0.1",
+    "ogl": "^0.0.60",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-intl": "^3.10.0",
+    "react-slick": "^0.25.2",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.3.2",
+    "three.js": "^0.77.1"
+  },
+  "devDependencies": {
+    "@types/node": "17.0.35",
+    "@types/nodemailer": "^6.4.5",
+    "@types/normalize-wheel": "^1.0.1",
+    "@types/react": "18.0.9",
+    "@types/react-dom": "18.0.5",
+    "@types/react-slick": "^0.23.10",
+    "@types/three": "^0.146.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "tailwindcss": "^3.1.2",
+    "three": "^0.148.0",
+    "typescript": "4.7.2",
+    "webpack-glsl-loader": "^1.0.1"
+  }
+}

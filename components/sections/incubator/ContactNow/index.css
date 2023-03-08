@@ -1,0 +1,285 @@
+.contact-now {
+  position: relative;
+  width: 900px;
+  max-width: 100%;
+}
+
+.contact-now--blue .contact-now__title {
+  text-shadow: 6px 3px 0 #0066FF
+}
+
+.contact-now__title {
+  font-family: Blinker;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.contact-now__subtitle {
+  margin: 1em auto;
+  max-width: 550px;
+  font-family: Blinker;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.contact-now__grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-row-gap: 42px;
+}
+
+.contact-now__grid-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-now__col {
+  display: flex;
+  align-items: center;
+}
+
+.contact-now__avatar {
+  position: relative;
+  margin-right: 30px;
+  width: 170px;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.contact-now__avatar:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.88;
+  box-sizing: border-box;
+  border-radius: 50%;
+}
+
+.contact-now__avatar:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.88;
+  box-sizing: border-box;
+  filter: blur(15px);
+  border-radius: 50%;
+}
+
+.contact-now--blue .contact-now__avatar {
+  background: rgba(0, 102, 255, 0.2);
+  box-shadow: 0 0 6px #0066FF;
+  border: 1px solid #0066FF;
+}
+
+.contact-now--blue .contact-now__avatar:before {
+  border: 1px solid #0066FF;
+  filter: drop-shadow(0px 0px 6px #0066FF);
+}
+
+.contact-now--blue .contact-now__avatar:after {
+  border: 4px solid #0066FF;
+}
+
+/* .contact-now--orange .contact-now__avatar {
+  background: rgba(255, 105, 50, 0.15);
+  box-shadow: 0 0 6px #FF6932;
+  border: 1px solid #FF6932;
+} */
+
+/* .contact-now--orange .contact-now__avatar:before {
+  border: 1px solid #FF6932;
+  filter: drop-shadow(0px 0px 6px #FF6932);
+}
+
+.contact-now--orange .contact-now__avatar:after {
+  border: 4px solid #FF6932;
+} */
+
+.contact-now__avatar img {
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.contact-now__profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-now__profile-name {
+  margin-bottom: .7em;
+  font-family: Blinker;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.contact-now__profile-email {
+  font-family: Blinker;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+}
+
+.contact-now__profile-email a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.contact-now__profile-email:before {
+  content: '';
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+  background-image: url("/images/contactNow/icon-mail.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact-now__messengers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.contact-now__messenger {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.contact-now__messenger-icon {
+  margin-bottom: 12px;
+  width: 114px;
+  height: 114px;
+  background: #0A0A0A;
+  border-radius: 5px;
+  transition: background-color .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-now__messenger-icon img {
+  object-position: center;
+  object-fit: contain;
+  width: 92px;
+  height: 92px;
+}
+
+.contact-now__messenger-icon:hover {
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.contact-now--blue .contact-now__messenger-icon:hover {
+  background: rgba(0, 102, 255, 0.1);
+  border: 1px solid #0066FF;
+}
+
+/* .contact-now--orange .contact-now__messenger-icon:hover {
+  background-color: #0A0A0A;
+  border: 1px solid #FF6932;
+} */
+
+.contact-now__messenger-label {
+  font-family: Blinker;
+  font-size: 14px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #B5B5B5;
+}
+
+.contact-now__messenger-icon--wechat {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+
+  .contact-now {
+    width: 360px;
+  }
+
+  .contact-now__grid {
+    grid-row-gap: 18px;
+  }
+
+  .contact-now__subtitle {
+    margin-bottom: 28px;
+    font-size: 11px;
+  }
+
+  .contact-now__col {
+    margin-bottom: 12px;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .contact-now__avatar {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .contact-now__messenger-icon {
+    height: 90px;
+    width: 90px;
+  }
+
+  .contact-now__messenger-icon img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .contact-now__messengers {
+    grid-column-gap: 24px;
+  }
+
+  .contact-now__profile-name {
+    font-size: 20px;
+  }
+
+  .contact-now__messenger-icon--wechat {
+    display: flex;
+  }
+
+  .contact-now__messenger-icon--qrcode {
+    display: none;
+  }
+}
+

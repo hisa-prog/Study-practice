@@ -1,0 +1,236 @@
+.recognition {
+	padding-top: 90px;
+	padding-bottom: 90px;
+	overflow-x: hidden;
+}
+.recognition__section-content {
+	width: 100%;
+	margin: auto;
+}
+.recognition__title {
+	margin-bottom: 88px;
+	text-align: left;
+	padding-left: 70px;
+}
+
+.recognition__card-slider .slick-track {
+	display: flex;
+	align-items: center;
+}
+/* .recognition__card-slider .slick-slide {
+    padding-right: 3.6rem;
+} */
+
+.recognition__card-slider .slick-slide > div {
+	padding: 0 18px;
+}
+
+.recognition__card-slider .slick-list {
+	margin: 0 -18px;
+}
+
+.recognition__card-slider .slick-slide .recognition__card {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 500px;
+	transform: scaleY(0.75);
+	width: 100%;
+	border: 1px solid #020f1c;
+	background: #0066ff0d;
+	transition: all 0.3s;
+}
+
+.recognition__card-slider .slick-active .recognition__card {
+	transform: scaleY(1);
+	box-shadow: 0 0 6px #0066ff;
+	border: 1px solid #0066ff;
+	background: rgba(0, 102, 255, 0.2);
+}
+.recognition__card-slider .slick-slide .recognition__card img {
+	transform: scaleX(0.75) scaleY(1);
+	transition: all 0.3s;
+}
+.recognition__card-slider .slick-active .recognition__card img {
+	transform: scaleX(1) scaleY(1);
+	transition: all 0.3s;
+}
+
+.valley {
+	width: 570px;
+}
+.Firms {
+	width: 500px;
+}
+.Developers {
+	width: 470px;
+}
+.Clutch {
+	width: 280px;
+}
+.dao {
+	width: 220px;
+}
+.CSDC {
+	width: 300px;
+}
+.IEEE {
+	width: 480px;
+}
+
+.recognition .slick-arrow {
+	background: #171717;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: -120px;
+	border-radius: 50px;
+	z-index: 1800;
+	font-size: 0;
+}
+.recognition .slick-arrow:hover {
+	background: #242424;
+	transition: 200ms ease-in;
+	cursor: pointer;
+}
+.recognition .slick-prev {
+	left: 87%;
+}
+.recognition .slick-prev::before {
+	content: url('/images-light/icons/arrow.svg');
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.recognition .slick-next::before {
+	content: url('/images-light/icons/arrow.svg');
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(180deg);
+}
+/* .recognition .slick-next {
+	right: 50px;
+} */
+
+@media (min-width: 1360px) {
+	.recognition .slick-next {
+		left: 92%;
+	}
+}
+
+.recognition .slider-dots {
+	display: flex !important;
+	width: 600px;
+	justify-content: space-between;
+	margin: 40px auto 0;
+}
+.recognition .slider-dots button {
+	font-size: 0;
+	width: 100%;
+	height: 100%;
+}
+.recognition .slider-dots .slick-active {
+	background: #a9a9a9;
+}
+.recognition .slider-dots li {
+	width: 10px;
+	height: 10px;
+	border-radius: 400px;
+	background: #3c3c3c;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+	.valley {
+		width: 240px;
+	}
+	.Firms {
+		width: 320px;
+	}
+	.Developers {
+		width: 240px;
+	}
+	.Clutch {
+		width: 224px;
+	}
+	.dao {
+		width: 176px;
+	}
+	.CSDC {
+		width: 240px;
+	}
+	.IEEE {
+		width: 240px;
+	}
+}
+
+@media (max-width: 768px) {
+	.recognition {
+		padding-top: 0;
+	}
+
+	.recognition__card-slider .slick-slide .recognition__card {
+		transform: scaleY(1);
+		box-shadow: 0 0 6px #0066ff;
+		border: 1px solid #0066ff;
+		background: rgba(0, 102, 255, 0.2);
+		margin-top: 16px;
+		margin-bottom: 16px;
+	}
+	.recognition__card-slider {
+		width: 100%;
+	}
+	.recognition__title {
+		margin-bottom: 32px;
+		padding-left: 0rem;
+		text-align: center;
+	}
+	.recognition .slick-list {
+		padding-left: unset;
+	}
+	.recognition .slider-dots {
+		width: 360px;
+		margin: 32px auto 0;
+	}
+	.recognition .slider-dots li {
+		width: 8px;
+		height: 8px;
+	}
+	.recognition__card-slider .slick-slide > div {
+		padding: 0 8px;
+	}
+
+	.recognition__card-slider .slick-list {
+		margin: 0 -8px;
+	}
+
+	.recognition .slick-arrow {
+		bottom: -100px;
+		top: unset;
+	}
+	.recognition .slick-prev {
+		left: 5vw;
+	}
+	.recognition .slick-next {
+		right: 5vw;
+	}
+}
+@media (max-width: 480px) {
+	.recognition .slick-prev {
+		left: 5%;
+	}
+	.recognition .slick-next {
+		right: 5%;
+	}
+	.recognition .slider-dots {
+		width: 176px;
+	}
+	.recognition .slider-dots li {
+		width: 6px;
+		height: 6px;
+	}
+}

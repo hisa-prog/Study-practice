@@ -1,0 +1,320 @@
+.preface-main {
+    position: absolute;
+    top:0;
+    width: 100%;
+    padding-top: 100px;
+    background: url("/images/preface/preface.webp") no-repeat 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+.rhombus-little {
+    content: '';
+    position: absolute;
+    left: 30%;
+    bottom: 50%;
+    height: 46px;
+    width: 46px;
+    background: rgba(0, 102, 255, 0.2);
+    box-shadow: 0 0 6px #0066FF;
+    border: 3px solid #0066FF;
+    -webkit-transform: scaleX(1) rotate(45deg);
+    -moz-transform: scaleX(1) rotate(45deg);
+    -ms-transform: scaleX(1) rotate(45deg);
+    transform: scaleX(1) rotate(45deg);
+    filter: blur(1px);
+    animation: animation_rhombus 5s infinite;
+}
+
+@media (max-width: 768px) {
+    .rhombus-title {
+        left: 15%;
+    }
+
+    .preface-main .contact-us-button__big {
+        margin-bottom: 24px;
+        margin-right: 24px;
+    }
+}
+
+.rhombus-middle {
+    content: '';
+    position: absolute;
+    left: -5%;
+    top: 8%;
+    height: 165px;
+    width: 165px;
+    background: rgba(0, 102, 255, 0.2);
+    box-shadow: 0 0 6px #0066FF;
+    border: 3px solid #0066FF;
+    -webkit-transform: scaleX(1) rotate(45deg);
+    -moz-transform: scaleX(1) rotate(45deg);
+    -ms-transform: scaleX(1) rotate(45deg);
+    transform: scaleX(1) rotate(45deg);
+    filter: blur(1px);
+    animation: animation_rhombus 5s infinite;
+}
+
+@keyframes animation_rhombus {
+    0% {
+        transform: scale(0.8) rotate(45deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .rhombus-middle {
+        display: none;
+    }
+}
+
+.rhombus-big {
+    content: '';
+    position: absolute;
+    top: 23%;
+    right: 0;
+    height: 512px;
+    width: 512px;
+    background: rgba(0, 102, 255, 0.2);
+    box-shadow: 0 0 6px #0066FF;
+    border: 6px solid #0066FF;
+    -webkit-transform: scaleX(1) rotate(45deg);
+    -moz-transform: scaleX(1) rotate(45deg);
+    -ms-transform: scaleX(1) rotate(45deg);
+    transform: scaleX(1) rotate(45deg);
+    filter: blur(1px);
+    animation: animation_rhombus 5s infinite;
+}
+
+@media (max-width: 768px) {
+    .rhombus-big {
+        top: 0;
+        right: -100%;
+    }
+}
+
+.preface-about-us__section-content {
+    max-width: 100vw;
+}
+
+.slider .preface-main__slider {
+    max-width: 100vw;
+}
+
+.preface-main__slide {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.preface-main__content-container {
+    position: absolute;
+    left: 0;
+    /* max-width: 700px; */
+    height: 500px;
+    /* padding: 100px 7.5%; */
+    padding: 0px 7.5%;
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+    .preface-main__content-container {
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh;
+        max-width: calc(100% - 320px);
+        padding: 0 5vw;
+    }
+}
+
+@media (max-width: 767px) {
+    .preface-main__content-container {
+        right: 0;
+        padding: 8px 16px;
+        max-width: 480px;
+        width: 100%;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .preface-main__content-container {
+        justify-content: space-between;
+        height: calc(80vh - 72px);
+        margin: auto;
+        margin-bottom: 88px;
+    }
+}
+
+.preface-main__title {
+    max-width: 700px;
+    margin-bottom: 43px;
+    font-size: 42px;
+    z-index: 1;
+    font-family: 'Blinker', sans-serif;
+    font-weight: 700;
+    line-height: 1.12;
+    text-transform: uppercase;
+}
+
+@media (max-width: 778px) {
+    .preface-main__title {
+        max-width: 320px;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .preface-main__title {
+        padding-top: 3vh;
+    }
+}
+
+.preface-main__subtitle {
+    max-width: 750px;
+    margin-bottom: 43px;
+    font-size: 31px;
+    z-index: 1;
+    font-family: 'Blinker', sans-serif;
+    font-weight: 600;
+    line-height: 1.12;
+    text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+    .preface-main__title {
+        margin-bottom: 112px;
+        font-size: 30px !important;
+        text-align: center;
+    }
+
+    .preface-main__subtitle {
+        display: none;
+    }
+}
+
+.preface-main__action {
+    width: 468px !important;
+    margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    .preface-main__action {
+        width: 280px !important;
+    }
+}
+
+.preface-main__image {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    height: 80vh;
+    z-index: 0;
+}
+
+@media (max-width: 991px) {
+    .preface-main__image {
+        height: 65vh;
+        width: 100vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .preface-main__image {
+        max-height: 440px;
+    }
+}
+
+.preface-main__wrapper-signature span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    text-shadow: 0 0 5px #000;
+}
+
+.preface-main__signature {
+    position: absolute;
+    bottom: 80px;
+    right: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.preface-main__name {
+    text-align: end;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .preface-main__name {
+        font-size: 12.8px;
+        line-height: 1;
+    }
+}
+
+.preface-main__position {
+    text-align: end;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+@media (max-width: 768px) {
+    .preface-main__position {
+        font-size: 12.8px;
+        line-height: 1;
+    }
+}
+
+.preface-main__card-action-icon {
+    margin-left: 15px;
+}
+
+.preface-main .slider-default__progress {
+    position: absolute;
+    bottom: 60px;
+    right: 0;
+    width: 22%;
+    margin: 3.1em 3.1em 0 3.1em;
+}
+
+.preface-main .slider-default__navigation {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    margin: 0 3.1em;
+}
+
+.preface-main__container-button {
+    margin-top: 55px;
+    max-width: 535px;
+}
+
+@media (max-width: 768px) {
+    .preface-main__container-button {
+        margin-bottom: 30px;
+        max-width: 320px;
+    }
+
+    .preface-main__container-button .button-orange.button-orange--big{
+        padding: 0 20.8px;
+    }
+}

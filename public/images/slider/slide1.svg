@@ -1,0 +1,17 @@
+<svg width="404" height="505" viewBox="0 0 404 505" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="101" y="101" width="101" height="101" fill="#FF6932" fill-opacity="0.45"/>
+<rect x="101" y="202" width="101" height="101" fill="#FF6932"/>
+<rect x="101" y="303" width="101" height="101" fill="#FF6932"/>
+<rect x="101" y="404" width="101" height="101" fill="#FF6932" fill-opacity="0.2"/>
+<rect x="202" y="101" width="101" height="101" fill="#FF6932" fill-opacity="0.5"/>
+<rect x="202" y="202" width="101" height="101" fill="#FF6932"/>
+<rect y="202" width="101" height="101" fill="#FF6932" fill-opacity="0.3"/>
+<rect x="202" width="101" height="101" fill="#FF6932"/>
+<rect x="202" y="303" width="101" height="101" fill="#FF6932" fill-opacity="0.5"/>
+<rect y="303" width="101" height="101" fill="#FF6932" fill-opacity="0.5"/>
+<rect x="202" y="404" width="101" height="101" fill="#FF6932" fill-opacity="0.5"/>
+<rect x="303" y="101" width="101" height="101" fill="#FF6932"/>
+<rect x="303" y="202" width="101" height="101" fill="#FF6932" fill-opacity="0.1"/>
+<rect x="303" y="303" width="101" height="101" fill="#FF6932" fill-opacity="0.2"/>
+<rect x="303" y="404" width="101" height="101" fill="#FF6932" fill-opacity="0.05"/>
+</svg>
